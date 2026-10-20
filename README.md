@@ -1,16 +1,29 @@
-# React + Vite
+# Taller 03 — Listas enlazadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Descripción
+Aplicación web desarrollada con React y Vite para trabajar conceptos de estructuras de datos mediante una lista de canciones y un historial de navegación.
 
-Currently, two official plugins are available:
+## Objetivos
+- Implementar una lista simplemente enlazada.
+- Implementar una lista doblemente enlazada.
+- Recorrer y consultar los elementos de las listas.
+- Crear una interfaz para navegar entre los elementos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías
+- JavaScript
+- React
+- Vite
+- CSS
+- Git y GitHub
 
-## React Compiler
+## Ejecución local
+1. Instalar Node.js.
+2. Ejecutar `npm install`.
+3. Ejecutar `npm run dev`.
+4. Abrir la dirección local indicada en la terminal.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estado del proyecto
+Incluye una lista de canciones con navegación y un historial de páginas de ejemplo.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Créditos y procedencia
+Documentar aquí las fuentes consultadas, el código reutilizado y las contribuciones realizadas por cada integrante, según corresponda.
