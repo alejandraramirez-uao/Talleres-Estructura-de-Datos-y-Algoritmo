@@ -1,0 +1,226 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #1e293b;
+  background: #f1f5f9;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: #172554;
+  color: #e2e8f0;
+  padding: 28px 16px 18px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 30px;
+}
+
+.marca-icono {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #60a5fa;
+  color: #172554;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.marca h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.marca span {
+  display: block;
+  margin-top: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.menu-titulo {
+  padding: 0 12px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 5px 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  min-height: 43px;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+
+.menu-link:hover {
+  background: #263b68;
+}
+
+.menu-link a {
+  flex: 1;
+  padding: 11px 4px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.toggle {
+  width: 26px;
+  border: 0;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.sidebar-pie {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding: 18px 8px 0;
+  border-top: 1px solid #334155;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+.estado {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+}
+
+.contenido {
+  flex: 1;
+  min-width: 0;
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 24px 36px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.bienvenida {
+  max-width: 900px;
+  margin: 65px auto;
+  padding: 0 30px;
+}
+
+.etiqueta {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bienvenida h1 {
+  margin: 14px 0;
+  color: #172554;
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.bienvenida > p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.tarjeta {
+  margin-top: 35px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 25px #0f172a0a;
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  color: #172554;
+}
+
+.tarjeta p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 220px;
+    padding: 20px 10px;
+  }
+
+  .barra-superior {
+    padding: 18px;
+    flex-direction: column;
+  }
+
+  .bienvenida {
+    margin: 35px auto;
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 175px;
+  }
+
+  .marca {
+    gap: 8px;
+    padding-left: 2px;
+  }
+
+  .marca h2 {
+    font-size: 16px;
+  }
+
+  .marca span {
+    font-size: 10px;
+  }
+
+  .menu-link a {
+    font-size: 12px;
+  }
+}
